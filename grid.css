@@ -1,0 +1,26 @@
+:root {
+    --grid-rows: 1;
+    --grid-columns: 1;
+}
+
+#container {
+    /* Centers container */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Sets border */
+    border-style: outset;
+    border-width: 20px;
+    border-color: red;
+    /* Creates grid */
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+/* Grid cell */
+.grid-item {
+    padding: 1em;
+    border: 1px solid lightgray;
+}
